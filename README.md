@@ -30,7 +30,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 
 ## Demo
-Here is a working live demo:
+Here is a working live demo: https://mohamedissack.github.io/Quotes-App/
 
 
 ## Further help
