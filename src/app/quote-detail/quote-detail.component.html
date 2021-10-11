@@ -1,0 +1,6 @@
+<li class="list-group-item"><strong>Author:</strong>  {{ quote.author}}</li>
+<li class="list-group-item"><strong>Submitter:</strong> {{ quote.submitter}}</li>
+<li class="list-group-item"><strong>Date:</strong> {{ quote.date|date}}</li>
+<li class="list-group-item">This quote was added<strong> {{quote.date|dateCount}}</strong>  days ago</li>
+<button class="btn btn-danger" (click)="deleteThisQuote(true)">Delete</button>
+

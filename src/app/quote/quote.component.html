@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>QUOTES</h1>
+<div class="row ">
+    <div class="col-md-6">
+      <div class="row">
+
+         <div
+         *ngFor="let quote of quotes; let i=index" class="card col-md-6" style="width: 18rem;" >
+          <div class="card-header">
+            Quote {{ quote.id}}
+          </div>
+          <h2 *ngIf="quote === highestUpVote()" appHighUpvote >Upvote<strong>High Upvote</strong> </h2>
+          <div class="list-group list-group-flush">
+            <li class="list-group-item"> <strong>Quote:</strong>
+               {{ quote.text}}</li>
+            <button class="btn btn-success" (click)="toggleDetails(i)">
+              Show Details
+            </button>
+            <app-quote-detail *ngIf="quote.description" [quote]="quote" (deleteQuote)="delete($event, i)"></app-quote-detail>
+            <li class="list-group-item"><i class="fas fa-thumbs-up" (click)="upVote(i)">Upvote</i>{{ quote.upvote}} <i class="fas fa-thumbs-down" (click)="downVote(i)">downVote</i>{{ quote.downvote}}</li>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+  </div>
+</div>
+
