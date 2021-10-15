@@ -23,7 +23,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 .BOOTSTRAP
 
 ## Demo
-Here is a working live demo: https://mohamedissack.github.io/Quotes-App/
+Here is a working live demo: https://mohamedissack.github.io/Quotes-App/     
 
 ## Further help
 
