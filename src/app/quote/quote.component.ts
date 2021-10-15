@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Hapiness is when what you say, what you think and what you are harmony','Peter', 'Jason',new Date(2020,6,9)),
-    new Quote(2, 'If people are doubting how far you can go, go so far that you can’t hear them anymore.', ' Michele Ruiz','seff',new Date(2020,7,9)), 
-    new Quote(3, 'We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes – understanding that failure is not the opposite of success, it’s part of success.','Arianna Huffington','Joseph',new Date(2020,6,9)),
+    new Quote(1, 'Hapiness is when what you say, what you think and what you are harmony','Peter', 'Jason',new Date(2021,6,9)),
+    new Quote(2, 'If people are doubting how far you can go, go so far that you can’t hear them anymore.', ' Michele Ruiz','seff',new Date(2021,7,9)),
+    new Quote(3, 'We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes – understanding that failure is not the opposite of success, it’s part of success.','Arianna Huffington','Joseph',new Date(2021,6,9)),
     // new Quote(4, 'Write it. Shoot it. Publish it. Crochet it, sauté it, whatever. MAKE.','Joss Whedon','Joseph',new Date(2020,6,7)),
     // new Quote(5, 'I wake up every morning and think to myself, ‘how far can I push this company in the next 24 hours.','Leah Busque','gandhi',new Date(2020,10,9)),
   ];
